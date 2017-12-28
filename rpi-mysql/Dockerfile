@@ -18,7 +18,7 @@ RUN { echo mysql-server mysql-server/data-dir select ''; \
 	&& apt-get update && apt-get install -y mysql-server="${MYSQL_VERSION}"* \
 	&& rm -rf /var/lib/apt/lists/*
 
-RUN	chown -R mysql:mysql /var/lib/mysql
+RUN	rm -rf /var/lib/mysql && mkdir -p /var/lib/mysql && chown -R mysql:mysql /var/lib/mysql
 
 RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/my.cnf
 
