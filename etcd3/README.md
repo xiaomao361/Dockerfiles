@@ -3,11 +3,13 @@ based on [xieyanze/etcd3](https://hub.docker.com/r/xieyanze/etcd3/) and make a l
 modify
 ---
 change the locatime to Shanghai
+
 change the `ENTRYPOINT` to `CMD`
 
 update
 ---
 update apline to 3.5
+
 update etcd to 3.2.13
 
 used
