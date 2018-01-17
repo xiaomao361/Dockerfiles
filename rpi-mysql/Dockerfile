@@ -5,8 +5,7 @@ RUN groupadd -r mysql && useradd -r -g mysql mysql
 
 RUN apt-get update && apt-get install -y perl --no-install-recommends
 
-RUN rm -rf /etc/localtime
-RUN ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+RUN cp -r -f /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 ENV TZ="Asia/Shanghai"
 
 ENV MYSQL_VERSION 5.5

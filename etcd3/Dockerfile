@@ -16,6 +16,6 @@ VOLUME /data
 
 EXPOSE 2379 2380
 
-ADD enterpoint.sh /usr/bin/enterpoint.sh
+ADD entrypoint.sh /usr/bin/entrypoint.sh
 
-CMD ["enterpoint.sh"]
+CMD ["entrypoint.sh"]

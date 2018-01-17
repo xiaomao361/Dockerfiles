@@ -17,8 +17,7 @@ FROM buildpack-deps:stretch-scm
 #       https://buildd.debian.org/status/logs.php?pkg=openjdk-8
 
 # change local timezone
-RUN rm -rf /etc/localtime
-RUN ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+RUN cp -rf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 ENV TZ="Asia/Shanghai"
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
