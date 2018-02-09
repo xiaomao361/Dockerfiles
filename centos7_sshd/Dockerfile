@@ -1,6 +1,6 @@
 # base centos7 images
 #
-# version:                 1.0
+# version:                 1.3
 
 FROM centos
 MAINTAINER zhouwei<xiaomao361@163.com>
