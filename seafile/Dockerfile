@@ -5,7 +5,7 @@ ENV SEAFILE_VERSION 6.2.5
 
 WORKDIR /home
 
-# init
+# init the base depend
 RUN apt-get update && \
     apt-get install -y python python2.7 libpython2.7 python-setuptools python-imaging python-ldap python-urllib3 ffmpeg python-pip python-mysqldb python-memcache && \
     pip install pillow moviepy

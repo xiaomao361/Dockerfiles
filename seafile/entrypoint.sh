@@ -5,4 +5,5 @@
 # author: zhouwei
 # email: xiaomao361@163.com
 
+# just tail for keep docker container running 
 tail -f /var/log/bootstrap.log
