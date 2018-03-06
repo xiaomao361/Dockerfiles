@@ -18,4 +18,4 @@ EXPOSE 2379 2380
 
 ADD entrypoint.sh /usr/bin/entrypoint.sh
 
-CMD ["entrypoint.sh"]
+ENTRYPOINT entrypoint.sh
