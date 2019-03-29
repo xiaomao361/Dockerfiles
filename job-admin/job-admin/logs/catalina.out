@@ -1,0 +1,738 @@
+08-Oct-2018 17:15:29.894 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/9.0.0.M15
+08-Oct-2018 17:15:29.900 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 5 2016 13:44:25 UTC
+08-Oct-2018 17:15:29.900 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         9.0.0.0
+08-Oct-2018 17:15:29.900 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+08-Oct-2018 17:15:29.900 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.14
+08-Oct-2018 17:15:29.900 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+08-Oct-2018 17:15:29.900 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre
+08-Oct-2018 17:15:29.900 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_181-b13
+08-Oct-2018 17:15:29.901 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+08-Oct-2018 17:15:29.901 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/zhouwei/docker/Dockerfiles/job-admin/job-admin
+08-Oct-2018 17:15:29.901 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/zhouwei/docker/Dockerfiles/job-admin/job-admin
+08-Oct-2018 17:15:29.901 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/zhouwei/docker/Dockerfiles/job-admin/job-admin/conf/logging.properties
+08-Oct-2018 17:15:29.901 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+08-Oct-2018 17:15:29.901 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+08-Oct-2018 17:15:29.901 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+08-Oct-2018 17:15:29.901 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/zhouwei/docker/Dockerfiles/job-admin/job-admin
+08-Oct-2018 17:15:29.902 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/zhouwei/docker/Dockerfiles/job-admin/job-admin
+08-Oct-2018 17:15:29.902 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/zhouwei/docker/Dockerfiles/job-admin/job-admin/temp
+08-Oct-2018 17:15:29.902 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/zhouwei/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+08-Oct-2018 17:15:30.050 信息 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8083"]
+08-Oct-2018 17:15:30.083 信息 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+08-Oct-2018 17:15:30.086 信息 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8019"]
+08-Oct-2018 17:15:30.087 信息 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+08-Oct-2018 17:15:30.088 信息 [main] org.apache.catalina.startup.Catalina.load Initialization processed in 554 ms
+08-Oct-2018 17:15:30.118 信息 [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+08-Oct-2018 17:15:30.118 信息 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/9.0.0.M15
+08-Oct-2018 17:15:30.127 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/zhouwei/docker/Dockerfiles/job-admin/job-admin/webapps/ROOT
+08-Oct-2018 17:15:32.021 信息 [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+log4j:ERROR setFile(null,true) call failed.
+java.io.FileNotFoundException: /data/applogs/xxl-job/xxl-job-admin.log (No such file or directory)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:133)
+	at org.apache.log4j.FileAppender.setFile(FileAppender.java:294)
+	at org.apache.log4j.FileAppender.activateOptions(FileAppender.java:165)
+	at org.apache.log4j.DailyRollingFileAppender.activateOptions(DailyRollingFileAppender.java:223)
+	at org.apache.log4j.config.PropertySetter.activate(PropertySetter.java:307)
+	at org.apache.log4j.config.PropertySetter.setProperties(PropertySetter.java:172)
+	at org.apache.log4j.config.PropertySetter.setProperties(PropertySetter.java:104)
+	at org.apache.log4j.PropertyConfigurator.parseAppender(PropertyConfigurator.java:842)
+	at org.apache.log4j.PropertyConfigurator.parseCategory(PropertyConfigurator.java:768)
+	at org.apache.log4j.PropertyConfigurator.configureRootCategory(PropertyConfigurator.java:648)
+	at org.apache.log4j.PropertyConfigurator.doConfigure(PropertyConfigurator.java:514)
+	at org.apache.log4j.PropertyConfigurator.doConfigure(PropertyConfigurator.java:580)
+	at org.apache.log4j.helpers.OptionConverter.selectAndConfigure(OptionConverter.java:526)
+	at org.apache.log4j.LogManager.<clinit>(LogManager.java:127)
+	at org.apache.log4j.Logger.getLogger(Logger.java:104)
+	at org.apache.commons.logging.impl.Log4JLogger.getLogger(Log4JLogger.java:289)
+	at org.apache.commons.logging.impl.Log4JLogger.<init>(Log4JLogger.java:109)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.apache.commons.logging.impl.LogFactoryImpl.createLogFromClass(LogFactoryImpl.java:1116)
+	at org.apache.commons.logging.impl.LogFactoryImpl.discoverLogImplementation(LogFactoryImpl.java:914)
+	at org.apache.commons.logging.impl.LogFactoryImpl.newInstance(LogFactoryImpl.java:604)
+	at org.apache.commons.logging.impl.LogFactoryImpl.getInstance(LogFactoryImpl.java:336)
+	at org.apache.commons.logging.impl.LogFactoryImpl.getInstance(LogFactoryImpl.java:310)
+	at org.apache.commons.logging.LogFactory.getLog(LogFactory.java:685)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:282)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:112)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4717)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5179)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:752)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:728)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:734)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1107)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1841)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+log4j:ERROR Either File or DatePattern options are not set for appender [logFile].
+2018-10-08 17:15:32,107 - xxl-job-admin - INFO [org.springframework.web.context.ContextLoader] - <Root WebApplicationContext: initialization started>
+2018-10-08 17:15:32,193 - xxl-job-admin - INFO [org.springframework.web.context.support.XmlWebApplicationContext] - <Refreshing Root WebApplicationContext: startup date [Mon Oct 08 17:15:32 CST 2018]; root of context hierarchy>
+2018-10-08 17:15:32,236 - xxl-job-admin - INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - <Loading XML bean definitions from file [/Users/zhouwei/docker/Dockerfiles/job-admin/job-admin/webapps/ROOT/WEB-INF/classes/spring/applicationcontext-xxl-job-admin.xml]>
+2018-10-08 17:15:32,351 - xxl-job-admin - INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - <Loading XML bean definitions from file [/Users/zhouwei/docker/Dockerfiles/job-admin/job-admin/webapps/ROOT/WEB-INF/classes/spring/applicationcontext-base.xml]>
+2018-10-08 17:15:32,541 - xxl-job-admin - INFO [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - <Loading properties file from URL [file:/Users/zhouwei/docker/Dockerfiles/job-admin/job-admin/webapps/ROOT/WEB-INF/classes/xxl-job-admin.properties]>
+2018-10-08 17:15:32,542 - xxl-job-admin - INFO [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - <Loading properties file from URL [file:/c:/hjgjconf/aum-job/xxl-job-admin.properties]>
+2018-10-08 17:15:32,542 - xxl-job-admin - WARN [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - <Could not load properties from URL [file:/c:/hjgjconf/aum-job/xxl-job-admin.properties]: /c:/hjgjconf/aum-job/xxl-job-admin.properties (No such file or directory)>
+2018-10-08 17:15:32,542 - xxl-job-admin - INFO [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - <Loading properties file from URL [file:/etc/hjgjconf/aum-job/xxl-job-admin.properties]>
+2018-10-08 17:15:32,543 - xxl-job-admin - WARN [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - <Could not load properties from URL [file:/etc/hjgjconf/aum-job/xxl-job-admin.properties]: /etc/hjgjconf/aum-job/xxl-job-admin.properties (No such file or directory)>
+2018-10-08 17:15:32,611 - xxl-job-admin - INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@6a5cc739: defining beans [propertyConfigurer,dataSource,sqlSessionFactory,org.mybatis.spring.mapper.MapperScannerConfigurer#0,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,quartzScheduler,xxlJobDynamicScheduler,adminBizImpl,xxlJobServiceImpl,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,freemarkerConfig,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,xxlJobLogDao,xxlJobGroupDao,xxlJobInfoDao,xxlJobRegistryDao,xxlJobLogGlueDao]; root of factory hierarchy>
+2018-10-08 17:15:32,640 - xxl-job-admin - INFO [com.mchange.v2.log.MLog] - <MLog clients using slf4j logging.>
+2018-10-08 17:16:02,690 - xxl-job-admin - INFO [com.mchange.v2.c3p0.C3P0Registry] - <Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]>
+2018-10-08 17:16:03,065 - xxl-job-admin - INFO [org.springframework.scheduling.quartz.SchedulerFactoryBean] - <Loading Quartz config from [class path resource [quartz.properties]]>
+2018-10-08 17:16:03,094 - xxl-job-admin - INFO [org.quartz.impl.StdSchedulerFactory] - <Using default implementation for ThreadExecutor>
+2018-10-08 17:16:33,102 - xxl-job-admin - INFO [org.quartz.simpl.SimpleThreadPool] - <Job execution threads will use class loader of thread: localhost-startStop-1>
+2018-10-08 17:16:33,119 - xxl-job-admin - INFO [org.quartz.core.SchedulerSignalerImpl] - <Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl>
+2018-10-08 17:16:33,119 - xxl-job-admin - INFO [org.quartz.core.QuartzScheduler] - <Quartz Scheduler v.2.3.0 created.>
+2018-10-08 17:16:33,161 - xxl-job-admin - INFO [com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource] - <Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 10, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 2vc16r9yn0omb91p7kv6a|1df9053e, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 2vc16r9yn0omb91p7kv6a|1df9053e, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://test.au32.cn:3306/xxl_job?useUnicode=true&characterEncoding=UTF-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 2, numHelperThreads -> 3, preferredTestQuery -> SELECT 1, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]>
+2018-10-08 17:16:33,630 - xxl-job-admin - INFO [org.springframework.scheduling.quartz.LocalDataSourceJobStore] - <Using db table-based data access locking (synchronization).>
+2018-10-08 17:16:33,632 - xxl-job-admin - INFO [org.springframework.scheduling.quartz.LocalDataSourceJobStore] - <JobStoreCMT initialized.>
+2018-10-08 17:16:33,633 - xxl-job-admin - INFO [org.quartz.core.QuartzScheduler] - <Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'zhouwei1538990193100'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 15 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+>
+2018-10-08 17:16:33,633 - xxl-job-admin - INFO [org.quartz.impl.StdSchedulerFactory] - <Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.>
+2018-10-08 17:16:33,633 - xxl-job-admin - INFO [org.quartz.impl.StdSchedulerFactory] - <Quartz scheduler version: 2.3.0>
+2018-10-08 17:16:33,635 - xxl-job-admin - INFO [org.quartz.core.QuartzScheduler] - <JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@9781f65>
+2018-10-08 17:16:33,671 - xxl-job-admin - INFO [com.xxl.job.admin.core.schedule.XxlJobDynamicScheduler] - <>>>>>>>>> init quartz scheduler success.[org.quartz.impl.StdScheduler@258a1d88]>
+2018-10-08 17:16:33,689 - xxl-job-admin - INFO [org.springframework.beans.factory.config.PropertiesFactoryBean] - <Loading properties file from class path resource [freemarker.properties]>
+2018-10-08 17:16:33,738 - xxl-job-admin - INFO [org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer] - <ClassTemplateLoader for Spring macros added to FreeMarker configuration>
+2018-10-08 17:16:33,741 - xxl-job-admin - INFO [org.springframework.context.support.DefaultLifecycleProcessor] - <Starting beans in phase 2147483647>
+2018-10-08 17:16:33,741 - xxl-job-admin - INFO [org.springframework.scheduling.quartz.SchedulerFactoryBean] - <Will start Quartz Scheduler [quartzScheduler] in 20 seconds>
+2018-10-08 17:16:33,746 - xxl-job-admin - INFO [org.springframework.web.context.ContextLoader] - <Root WebApplicationContext: initialization completed in 61638 ms>
+2018-10-08 17:16:33,751 - xxl-job-admin - INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - <Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]>
+2018-10-08 17:16:33,769 - xxl-job-admin - INFO [org.springframework.jdbc.support.SQLErrorCodesFactory] - <SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase]>
+2018-10-08 17:16:33,771 - xxl-job-admin - ERROR [com.xxl.job.admin.core.thread.JobRegistryMonitorHelper] - <job registry instance error:{}>
+org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'xxl_job.XXL_JOB_QRTZ_TRIGGER_GROUP' doesn't exist
+### The error may exist in file [/Users/zhouwei/docker/Dockerfiles/job-admin/job-admin/webapps/ROOT/WEB-INF/classes/mybatis-mapper/XxlJobGroupMapper.xml]
+### The error may involve com.xxl.job.admin.dao.XxlJobGroupDao.findByAddressType-Inline
+### The error occurred while setting parameters
+### SQL: SELECT     t.id,   t.app_name,   t.title,   t.order,   t.address_type,   t.address_list      FROM XXL_JOB_QRTZ_TRIGGER_GROUP AS t   WHERE t.address_type = ?   ORDER BY t.order ASC
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'xxl_job.XXL_JOB_QRTZ_TRIGGER_GROUP' doesn't exist
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'xxl_job.XXL_JOB_QRTZ_TRIGGER_GROUP' doesn't exist
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:237)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:73)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:371)
+	at com.sun.proxy.$Proxy8.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:198)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:119)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:63)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:52)
+	at com.sun.proxy.$Proxy13.findByAddressType(Unknown Source)
+	at com.xxl.job.admin.core.thread.JobRegistryMonitorHelper$1.run(JobRegistryMonitorHelper.java:38)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'xxl_job.XXL_JOB_QRTZ_TRIGGER_GROUP' doesn't exist
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1054)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4237)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4169)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2617)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2778)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2834)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2156)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1379)
+	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.execute(NewProxyPreparedStatement.java:67)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:59)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:73)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:60)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:267)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:137)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:96)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:77)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:108)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:102)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:358)
+	... 8 more
+2018-10-08 17:16:33,776 - xxl-job-admin - INFO [org.springframework.web.servlet.DispatcherServlet] - <FrameworkServlet 'springmvc': initialization started>
+2018-10-08 17:16:33,778 - xxl-job-admin - INFO [org.springframework.web.context.support.XmlWebApplicationContext] - <Refreshing WebApplicationContext for namespace 'springmvc-servlet': startup date [Mon Oct 08 17:16:33 CST 2018]; parent: Root WebApplicationContext>
+2018-10-08 17:16:33,779 - xxl-job-admin - INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - <Loading XML bean definitions from URL [file:/Users/zhouwei/docker/Dockerfiles/job-admin/job-admin/webapps/ROOT/WEB-INF/classes/spring/springmvc-context.xml]>
+2018-10-08 17:16:33,873 - xxl-job-admin - INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@59739b5f: defining beans [mvcContentNegotiationManager,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,jobCodeController,jobLogController,indexController,jobApiController,jobGroupController,jobInfoController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0,mvcPathMatcher,mvcUrlPathHelper,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#1,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#2,viewResolver,org.springframework.web.servlet.handler.MappedInterceptor#1,org.springframework.web.servlet.handler.MappedInterceptor#2,exceptionResolver,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@6a5cc739>
+2018-10-08 17:16:33,942 - xxl-job-admin - INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - <Mapped "{[/jobcode],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.xxl.job.admin.controller.JobCodeController.index(org.springframework.ui.Model,int)>
+2018-10-08 17:16:33,942 - xxl-job-admin - INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - <Mapped "{[/jobcode/save],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.xxl.job.core.biz.model.ReturnT<java.lang.String> com.xxl.job.admin.controller.JobCodeController.save(org.springframework.ui.Model,int,java.lang.String,java.lang.String)>
+2018-10-08 17:16:33,944 - xxl-job-admin - INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - <Mapped "{[/joblog],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.xxl.job.admin.controller.JobLogController.index(org.springframework.ui.Model,java.lang.Integer)>
+2018-10-08 17:16:33,944 - xxl-job-admin - INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - <Mapped "{[/joblog/clearLog],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.xxl.job.core.biz.model.ReturnT<java.lang.String> com.xxl.job.admin.controller.JobLogController.clearLog(int,int,int)>
+2018-10-08 17:16:33,944 - xxl-job-admin - INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - <Mapped "{[/joblog/getJobsByGroup],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.xxl.job.core.biz.model.ReturnT<java.util.List<com.xxl.job.admin.core.model.XxlJobInfo>> com.xxl.job.admin.controller.JobLogController.getJobsByGroup(int)>
+2018-10-08 17:16:33,944 - xxl-job-admin - INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - <Mapped "{[/joblog/logDetailPage],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.xxl.job.admin.controller.JobLogController.logDetailPage(int,org.springframework.ui.Model)>
+2018-10-08 17:16:33,945 - xxl-job-admin - INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - <Mapped "{[/joblog/logDetailCat],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.xxl.job.core.biz.model.ReturnT<com.xxl.job.core.biz.model.LogResult> com.xxl.job.admin.controller.JobLogController.logDetailCat(java.lang.String,long,int,int)>
+2018-10-08 17:16:33,945 - xxl-job-admin - INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - <Mapped "{[/joblog/logKill],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.xxl.job.core.biz.model.ReturnT<java.lang.String> com.xxl.job.admin.controller.JobLogController.logKill(int)>
+2018-10-08 17:16:33,945 - xxl-job-admin - INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - <Mapped "{[/joblog/pageList],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.xxl.job.admin.controller.JobLogController.pageList(int,int,int,int,int,java.lang.String)>
+2018-10-08 17:16:33,947 - xxl-job-admin - INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - <Mapped "{[/],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.xxl.job.admin.controller.IndexController.index(org.springframework.ui.Model)>
+2018-10-08 17:16:33,947 - xxl-job-admin - INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - <Mapped "{[/help],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.xxl.job.admin.controller.IndexController.help()>
+2018-10-08 17:16:33,948 - xxl-job-admin - INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - <Mapped "{[/logout],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.xxl.job.core.biz.model.ReturnT<java.lang.String> com.xxl.job.admin.controller.IndexController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+2018-10-08 17:16:33,948 - xxl-job-admin - INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - <Mapped "{[/toLogin],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.xxl.job.admin.controller.IndexController.toLogin(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest)>
+2018-10-08 17:16:33,948 - xxl-job-admin - INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - <Mapped "{[/login],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.xxl.job.core.biz.model.ReturnT<java.lang.String> com.xxl.job.admin.controller.IndexController.loginDo(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String,java.lang.String)>
+2018-10-08 17:16:33,948 - xxl-job-admin - INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - <Mapped "{[/triggerChartDate],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.xxl.job.core.biz.model.ReturnT<java.util.Map<java.lang.String, java.lang.Object>> com.xxl.job.admin.controller.IndexController.triggerChartDate()>
+2018-10-08 17:16:33,949 - xxl-job-admin - INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - <Mapped "{[/api],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void com.xxl.job.admin.controller.JobApiController.api(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException>
+2018-10-08 17:16:33,950 - xxl-job-admin - INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - <Mapped "{[/jobgroup],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.xxl.job.admin.controller.JobGroupController.index(org.springframework.ui.Model)>
+2018-10-08 17:16:33,950 - xxl-job-admin - INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - <Mapped "{[/jobgroup/remove],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.xxl.job.core.biz.model.ReturnT<java.lang.String> com.xxl.job.admin.controller.JobGroupController.remove(int)>
+2018-10-08 17:16:33,950 - xxl-job-admin - INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - <Mapped "{[/jobgroup/update],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.xxl.job.core.biz.model.ReturnT<java.lang.String> com.xxl.job.admin.controller.JobGroupController.update(com.xxl.job.admin.core.model.XxlJobGroup)>
+2018-10-08 17:16:33,950 - xxl-job-admin - INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - <Mapped "{[/jobgroup/save],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.xxl.job.core.biz.model.ReturnT<java.lang.String> com.xxl.job.admin.controller.JobGroupController.save(com.xxl.job.admin.core.model.XxlJobGroup)>
+2018-10-08 17:16:33,952 - xxl-job-admin - INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - <Mapped "{[/jobinfo],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.xxl.job.admin.controller.JobInfoController.index(org.springframework.ui.Model,int)>
+2018-10-08 17:16:33,952 - xxl-job-admin - INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - <Mapped "{[/jobinfo/add],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.xxl.job.core.biz.model.ReturnT<java.lang.String> com.xxl.job.admin.controller.JobInfoController.add(com.xxl.job.admin.core.model.XxlJobInfo)>
+2018-10-08 17:16:33,953 - xxl-job-admin - INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - <Mapped "{[/jobinfo/remove],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.xxl.job.core.biz.model.ReturnT<java.lang.String> com.xxl.job.admin.controller.JobInfoController.remove(int)>
+2018-10-08 17:16:33,953 - xxl-job-admin - INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - <Mapped "{[/jobinfo/resume],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.xxl.job.core.biz.model.ReturnT<java.lang.String> com.xxl.job.admin.controller.JobInfoController.resume(int)>
+2018-10-08 17:16:33,953 - xxl-job-admin - INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - <Mapped "{[/jobinfo/pause],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.xxl.job.core.biz.model.ReturnT<java.lang.String> com.xxl.job.admin.controller.JobInfoController.pause(int)>
+2018-10-08 17:16:33,953 - xxl-job-admin - INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - <Mapped "{[/jobinfo/trigger],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.xxl.job.core.biz.model.ReturnT<java.lang.String> com.xxl.job.admin.controller.JobInfoController.triggerJob(int)>
+2018-10-08 17:16:33,953 - xxl-job-admin - INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - <Mapped "{[/jobinfo/pageList],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.xxl.job.admin.controller.JobInfoController.pageList(int,int,int,java.lang.String,java.lang.String)>
+2018-10-08 17:16:33,953 - xxl-job-admin - INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - <Mapped "{[/jobinfo/reschedule],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.xxl.job.core.biz.model.ReturnT<java.lang.String> com.xxl.job.admin.controller.JobInfoController.reschedule(com.xxl.job.admin.core.model.XxlJobInfo)>
+2018-10-08 17:16:34,296 - xxl-job-admin - INFO [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - <Mapped URL path [/favicon.ico] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'>
+2018-10-08 17:16:34,297 - xxl-job-admin - INFO [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - <Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'>
+2018-10-08 17:16:34,298 - xxl-job-admin - INFO [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - <Mapped URL path [/**/*.html] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'>
+2018-10-08 17:16:34,343 - xxl-job-admin - INFO [org.springframework.web.servlet.DispatcherServlet] - <FrameworkServlet 'springmvc': initialization completed in 567 ms>
+08-Oct-2018 17:16:34.355 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/zhouwei/docker/Dockerfiles/job-admin/job-admin/webapps/ROOT has finished in 64,227 ms
+08-Oct-2018 17:16:34.357 信息 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler [http-nio-8083]
+08-Oct-2018 17:16:34.364 信息 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler [ajp-nio-8019]
+08-Oct-2018 17:16:34.365 信息 [main] org.apache.catalina.startup.Catalina.start Server startup in 64276 ms
+2018-10-08 17:16:34,620 - xxl-job-admin - ERROR [com.xxl.job.admin.controller.resolver.WebExceptionResolver] - <WebExceptionResolver:{}>
+org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'xxl_job.XXL_JOB_QRTZ_TRIGGER_INFO' doesn't exist
+### The error may exist in file [/Users/zhouwei/docker/Dockerfiles/job-admin/job-admin/webapps/ROOT/WEB-INF/classes/mybatis-mapper/XxlJobInfoMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT count(1)   FROM XXL_JOB_QRTZ_TRIGGER_INFO
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'xxl_job.XXL_JOB_QRTZ_TRIGGER_INFO' doesn't exist
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'xxl_job.XXL_JOB_QRTZ_TRIGGER_INFO' doesn't exist
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:237)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:73)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:371)
+	at com.sun.proxy.$Proxy8.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:163)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:68)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:52)
+	at com.sun.proxy.$Proxy11.findAllCount(Unknown Source)
+	at com.xxl.job.admin.service.impl.XxlJobServiceImpl.dashboardInfo(XxlJobServiceImpl.java:290)
+	at com.xxl.job.admin.controller.IndexController.index(IndexController.java:33)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:743)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:672)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:82)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:933)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:867)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:951)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:842)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:827)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:106)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:474)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:624)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:745)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1437)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'xxl_job.XXL_JOB_QRTZ_TRIGGER_INFO' doesn't exist
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1054)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4237)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4169)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2617)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2778)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2834)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2156)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1379)
+	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.execute(NewProxyPreparedStatement.java:67)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:59)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:73)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:60)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:267)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:137)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:96)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:77)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:108)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:102)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:66)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:358)
+	... 50 more
+2018-10-08 17:16:34,620 - xxl-job-admin - ERROR [com.xxl.job.admin.controller.resolver.WebExceptionResolver] - <WebExceptionResolver:{}>
+org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'xxl_job.XXL_JOB_QRTZ_TRIGGER_INFO' doesn't exist
+### The error may exist in file [/Users/zhouwei/docker/Dockerfiles/job-admin/job-admin/webapps/ROOT/WEB-INF/classes/mybatis-mapper/XxlJobInfoMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT count(1)   FROM XXL_JOB_QRTZ_TRIGGER_INFO
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'xxl_job.XXL_JOB_QRTZ_TRIGGER_INFO' doesn't exist
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'xxl_job.XXL_JOB_QRTZ_TRIGGER_INFO' doesn't exist
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:237)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:73)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:371)
+	at com.sun.proxy.$Proxy8.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:163)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:68)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:52)
+	at com.sun.proxy.$Proxy11.findAllCount(Unknown Source)
+	at com.xxl.job.admin.service.impl.XxlJobServiceImpl.dashboardInfo(XxlJobServiceImpl.java:290)
+	at com.xxl.job.admin.controller.IndexController.index(IndexController.java:33)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:743)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:672)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:82)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:933)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:867)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:951)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:842)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:827)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:106)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:474)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:624)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:745)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1437)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'xxl_job.XXL_JOB_QRTZ_TRIGGER_INFO' doesn't exist
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1054)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4237)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4169)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2617)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2778)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2834)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2156)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1379)
+	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.execute(NewProxyPreparedStatement.java:67)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:59)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:73)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:60)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:267)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:137)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:96)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:77)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:108)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:102)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:66)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:358)
+	... 50 more
+2018-10-08 17:16:34,620 - xxl-job-admin - ERROR [com.xxl.job.admin.controller.resolver.WebExceptionResolver] - <WebExceptionResolver:{}>
+org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'xxl_job.XXL_JOB_QRTZ_TRIGGER_INFO' doesn't exist
+### The error may exist in file [/Users/zhouwei/docker/Dockerfiles/job-admin/job-admin/webapps/ROOT/WEB-INF/classes/mybatis-mapper/XxlJobInfoMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT count(1)   FROM XXL_JOB_QRTZ_TRIGGER_INFO
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'xxl_job.XXL_JOB_QRTZ_TRIGGER_INFO' doesn't exist
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'xxl_job.XXL_JOB_QRTZ_TRIGGER_INFO' doesn't exist
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:237)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:73)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:371)
+	at com.sun.proxy.$Proxy8.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:163)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:68)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:52)
+	at com.sun.proxy.$Proxy11.findAllCount(Unknown Source)
+	at com.xxl.job.admin.service.impl.XxlJobServiceImpl.dashboardInfo(XxlJobServiceImpl.java:290)
+	at com.xxl.job.admin.controller.IndexController.index(IndexController.java:33)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:743)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:672)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:82)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:933)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:867)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:951)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:842)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:827)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:106)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:474)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:624)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:745)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1437)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'xxl_job.XXL_JOB_QRTZ_TRIGGER_INFO' doesn't exist
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1054)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4237)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4169)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2617)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2778)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2834)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2156)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1379)
+	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.execute(NewProxyPreparedStatement.java:67)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:59)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:73)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:60)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:267)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:137)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:96)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:77)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:108)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:102)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:66)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:358)
+	... 50 more
+2018-10-08 17:16:53,746 - xxl-job-admin - INFO [org.springframework.scheduling.quartz.SchedulerFactoryBean] - <Starting Quartz Scheduler now, after delay of 20 seconds>
+2018-10-08 17:16:55,860 - xxl-job-admin - ERROR [org.springframework.scheduling.quartz.LocalDataSourceJobStore] - <ClusterManager: Error managing cluster: Failure obtaining db row lock: Table 'xxl_job.XXL_JOB_QRTZ_LOCKS' doesn't exist>
+org.quartz.impl.jdbcjobstore.LockException: Failure obtaining db row lock: Table 'xxl_job.XXL_JOB_QRTZ_LOCKS' doesn't exist [See nested exception: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'xxl_job.XXL_JOB_QRTZ_LOCKS' doesn't exist]
+	at org.quartz.impl.jdbcjobstore.StdRowLockSemaphore.executeSQL(StdRowLockSemaphore.java:157)
+	at org.quartz.impl.jdbcjobstore.DBSemaphore.obtainLock(DBSemaphore.java:113)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.doCheckin(JobStoreSupport.java:3320)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$ClusterManager.manage(JobStoreSupport.java:3920)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$ClusterManager.initialize(JobStoreSupport.java:3905)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.schedulerStarted(JobStoreSupport.java:692)
+	at org.quartz.core.QuartzScheduler.start(QuartzScheduler.java:539)
+	at org.quartz.impl.StdScheduler.start(StdScheduler.java:142)
+	at org.springframework.scheduling.quartz.SchedulerFactoryBean$1.run(SchedulerFactoryBean.java:663)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'xxl_job.XXL_JOB_QRTZ_LOCKS' doesn't exist
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1054)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4237)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4169)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2617)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2778)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2834)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2156)
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:2313)
+	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.executeQuery(NewProxyPreparedStatement.java:353)
+	at org.quartz.impl.jdbcjobstore.StdRowLockSemaphore.executeSQL(StdRowLockSemaphore.java:96)
+	... 8 more
+2018-10-08 17:16:55,862 - xxl-job-admin - INFO [org.quartz.core.QuartzScheduler] - <Scheduler quartzScheduler_$_zhouwei1538990193100 started.>
+2018-10-08 17:16:55,935 - xxl-job-admin - ERROR [org.springframework.scheduling.quartz.LocalDataSourceJobStore] - <MisfireHandler: Error handling misfires: Database error recovering from misfires.>
+org.quartz.JobPersistenceException: Database error recovering from misfires. [See nested exception: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'xxl_job.XXL_JOB_QRTZ_TRIGGERS' doesn't exist]
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.doRecoverMisfires(JobStoreSupport.java:3259)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$MisfireHandler.manage(JobStoreSupport.java:3997)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$MisfireHandler.run(JobStoreSupport.java:4018)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'xxl_job.XXL_JOB_QRTZ_TRIGGERS' doesn't exist
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1054)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4237)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4169)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2617)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2778)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2834)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2156)
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:2313)
+	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.executeQuery(NewProxyPreparedStatement.java:353)
+	at org.quartz.impl.jdbcjobstore.StdJDBCDelegate.countMisfiredTriggersInState(StdJDBCDelegate.java:393)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.doRecoverMisfires(JobStoreSupport.java:3238)
+	... 2 more
+2018-10-08 17:16:56,075 - xxl-job-admin - ERROR [org.quartz.core.ErrorLogger] - <An error occurred while scanning for the next triggers to fire.>
+org.quartz.JobPersistenceException: Couldn't acquire next trigger: Table 'xxl_job.XXL_JOB_QRTZ_TRIGGERS' doesn't exist [See nested exception: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'xxl_job.XXL_JOB_QRTZ_TRIGGERS' doesn't exist]
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.acquireNextTrigger(JobStoreSupport.java:2910)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$41.execute(JobStoreSupport.java:2805)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$41.execute(JobStoreSupport.java:2803)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.executeInNonManagedTXLock(JobStoreSupport.java:3849)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.acquireNextTriggers(JobStoreSupport.java:2802)
+	at org.quartz.core.QuartzSchedulerThread.run(QuartzSchedulerThread.java:287)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'xxl_job.XXL_JOB_QRTZ_TRIGGERS' doesn't exist
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1054)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4237)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4169)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2617)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2778)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2834)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2156)
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:2304)
+	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.executeQuery(NewProxyPreparedStatement.java:353)
+	at org.quartz.impl.jdbcjobstore.StdJDBCDelegate.selectTriggerToAcquire(StdJDBCDelegate.java:2613)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.acquireNextTrigger(JobStoreSupport.java:2844)
+	... 5 more
+2018-10-08 17:17:03,816 - xxl-job-admin - ERROR [com.xxl.job.admin.core.thread.JobRegistryMonitorHelper] - <job registry instance error:{}>
+org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'xxl_job.XXL_JOB_QRTZ_TRIGGER_GROUP' doesn't exist
+### The error may exist in file [/Users/zhouwei/docker/Dockerfiles/job-admin/job-admin/webapps/ROOT/WEB-INF/classes/mybatis-mapper/XxlJobGroupMapper.xml]
+### The error may involve com.xxl.job.admin.dao.XxlJobGroupDao.findByAddressType-Inline
+### The error occurred while setting parameters
+### SQL: SELECT     t.id,   t.app_name,   t.title,   t.order,   t.address_type,   t.address_list      FROM XXL_JOB_QRTZ_TRIGGER_GROUP AS t   WHERE t.address_type = ?   ORDER BY t.order ASC
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'xxl_job.XXL_JOB_QRTZ_TRIGGER_GROUP' doesn't exist
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'xxl_job.XXL_JOB_QRTZ_TRIGGER_GROUP' doesn't exist
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:237)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:73)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:371)
+	at com.sun.proxy.$Proxy8.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:198)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:119)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:63)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:52)
+	at com.sun.proxy.$Proxy13.findByAddressType(Unknown Source)
+	at com.xxl.job.admin.core.thread.JobRegistryMonitorHelper$1.run(JobRegistryMonitorHelper.java:38)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'xxl_job.XXL_JOB_QRTZ_TRIGGER_GROUP' doesn't exist
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1054)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4237)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4169)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2617)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2778)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2834)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2156)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1379)
+	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.execute(NewProxyPreparedStatement.java:67)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:59)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:73)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:60)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:267)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:137)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:96)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:77)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:108)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:102)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:358)
+	... 8 more
+08-Oct-2018 17:17:19.439 信息 [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+08-Oct-2018 17:17:19.440 信息 [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8083"]
+08-Oct-2018 17:17:19.441 信息 [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8019"]
+08-Oct-2018 17:17:19.442 信息 [main] org.apache.catalina.core.StandardService.stopInternal Stopping service Catalina
+2018-10-08 17:17:19,443 - xxl-job-admin - INFO [org.springframework.web.context.support.XmlWebApplicationContext] - <Closing WebApplicationContext for namespace 'springmvc-servlet': startup date [Mon Oct 08 17:16:33 CST 2018]; parent: Root WebApplicationContext>
+2018-10-08 17:17:19,443 - xxl-job-admin - INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@59739b5f: defining beans [mvcContentNegotiationManager,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,jobCodeController,jobLogController,indexController,jobApiController,jobGroupController,jobInfoController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0,mvcPathMatcher,mvcUrlPathHelper,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#1,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#2,viewResolver,org.springframework.web.servlet.handler.MappedInterceptor#1,org.springframework.web.servlet.handler.MappedInterceptor#2,exceptionResolver,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@6a5cc739>
+2018-10-08 17:17:19,445 - xxl-job-admin - INFO [org.springframework.web.context.support.XmlWebApplicationContext] - <Closing Root WebApplicationContext: startup date [Mon Oct 08 17:15:32 CST 2018]; root of context hierarchy>
+2018-10-08 17:17:19,445 - xxl-job-admin - INFO [org.springframework.context.support.DefaultLifecycleProcessor] - <Stopping beans in phase 2147483647>
+2018-10-08 17:17:19,447 - xxl-job-admin - INFO [org.quartz.core.QuartzScheduler] - <Scheduler quartzScheduler_$_zhouwei1538990193100 paused.>
+2018-10-08 17:17:19,447 - xxl-job-admin - INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@6a5cc739: defining beans [propertyConfigurer,dataSource,sqlSessionFactory,org.mybatis.spring.mapper.MapperScannerConfigurer#0,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,quartzScheduler,xxlJobDynamicScheduler,adminBizImpl,xxlJobServiceImpl,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,freemarkerConfig,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,xxlJobLogDao,xxlJobGroupDao,xxlJobInfoDao,xxlJobRegistryDao,xxlJobLogGlueDao]; root of factory hierarchy>
+2018-10-08 17:17:19,447 - xxl-job-admin - INFO [org.springframework.scheduling.quartz.SchedulerFactoryBean] - <Shutting down Quartz Scheduler>
+2018-10-08 17:17:19,447 - xxl-job-admin - INFO [org.quartz.core.QuartzScheduler] - <Scheduler quartzScheduler_$_zhouwei1538990193100 shutting down.>
+2018-10-08 17:17:19,447 - xxl-job-admin - INFO [org.quartz.core.QuartzScheduler] - <Scheduler quartzScheduler_$_zhouwei1538990193100 paused.>
+2018-10-08 17:17:19,448 - xxl-job-admin - INFO [org.quartz.core.QuartzScheduler] - <Scheduler quartzScheduler_$_zhouwei1538990193100 shutdown complete.>
+08-Oct-2018 17:17:19.456 警告 [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [ROOT] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+08-Oct-2018 17:17:19.456 警告 [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ROOT] appears to have started a thread named [quartzScheduler_Worker-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:568)
+08-Oct-2018 17:17:19.457 警告 [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ROOT] appears to have started a thread named [quartzScheduler_Worker-2] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:568)
+08-Oct-2018 17:17:19.457 警告 [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ROOT] appears to have started a thread named [quartzScheduler_Worker-3] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:568)
+08-Oct-2018 17:17:19.457 警告 [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ROOT] appears to have started a thread named [quartzScheduler_Worker-4] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:568)
+08-Oct-2018 17:17:19.457 警告 [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ROOT] appears to have started a thread named [quartzScheduler_Worker-5] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:568)
+08-Oct-2018 17:17:19.458 警告 [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ROOT] appears to have started a thread named [quartzScheduler_Worker-6] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:568)
+08-Oct-2018 17:17:19.458 警告 [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ROOT] appears to have started a thread named [quartzScheduler_Worker-7] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:568)
+08-Oct-2018 17:17:19.458 警告 [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ROOT] appears to have started a thread named [quartzScheduler_Worker-8] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:568)
+08-Oct-2018 17:17:19.458 警告 [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ROOT] appears to have started a thread named [quartzScheduler_Worker-9] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:568)
+08-Oct-2018 17:17:19.459 警告 [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ROOT] appears to have started a thread named [quartzScheduler_Worker-10] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:568)
+08-Oct-2018 17:17:19.459 警告 [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ROOT] appears to have started a thread named [quartzScheduler_Worker-11] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:568)
+08-Oct-2018 17:17:19.459 警告 [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ROOT] appears to have started a thread named [quartzScheduler_Worker-12] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:568)
+08-Oct-2018 17:17:19.459 警告 [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ROOT] appears to have started a thread named [quartzScheduler_Worker-13] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:568)
+08-Oct-2018 17:17:19.460 警告 [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ROOT] appears to have started a thread named [quartzScheduler_Worker-14] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:568)
+08-Oct-2018 17:17:19.460 警告 [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ROOT] appears to have started a thread named [quartzScheduler_Worker-15] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:568)
+08-Oct-2018 17:17:19.460 警告 [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ROOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:40)
+08-Oct-2018 17:17:19.461 警告 [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ROOT] appears to have started a thread named [Thread-9] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Thread.sleep(Native Method)
+ java.lang.Thread.sleep(Thread.java:340)
+ java.util.concurrent.TimeUnit.sleep(TimeUnit.java:386)
+ com.xxl.job.admin.core.thread.JobRegistryMonitorHelper$1.run(JobRegistryMonitorHelper.java:80)
+ java.lang.Thread.run(Thread.java:748)
+08-Oct-2018 17:17:19.461 警告 [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ROOT] appears to have started a thread named [Thread-10] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ com.xxl.job.admin.core.thread.JobFailMonitorHelper$1.run(JobFailMonitorHelper.java:41)
+ java.lang.Thread.run(Thread.java:748)
+08-Oct-2018 17:17:19.462 警告 [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ROOT] appears to have started a thread named [quartzScheduler_QuartzSchedulerThread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Thread.sleep(Native Method)
+ org.quartz.core.QuartzSchedulerThread.run(QuartzSchedulerThread.java:273)
+08-Oct-2018 17:17:19.467 信息 [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8083"]
+08-Oct-2018 17:17:19.470 信息 [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8019"]
+08-Oct-2018 17:17:19.472 信息 [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8083"]
+08-Oct-2018 17:17:19.473 严重 [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to destroy component [Connector[HTTP/1.1-8083]]
+ org.apache.catalina.LifecycleException: Protocol handler destroy failed
+	at org.apache.catalina.connector.Connector.destroyInternal(Connector.java:1003)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:322)
+	at org.apache.catalina.core.StandardService.destroyInternal(StandardService.java:543)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:322)
+	at org.apache.catalina.core.StandardServer.destroyInternal(StandardServer.java:883)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:322)
+	at org.apache.catalina.startup.Catalina.stop(Catalina.java:729)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:690)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:355)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:495)
+Caused by: java.io.IOException: No route to host
+	at sun.nio.ch.NativeThread.signal(Native Method)
+	at sun.nio.ch.ServerSocketChannelImpl.implCloseSelectableChannel(ServerSocketChannelImpl.java:292)
+	at java.nio.channels.spi.AbstractSelectableChannel.implCloseChannel(AbstractSelectableChannel.java:234)
+	at java.nio.channels.spi.AbstractInterruptibleChannel.close(AbstractInterruptibleChannel.java:115)
+	at sun.nio.ch.ServerSocketAdaptor.close(ServerSocketAdaptor.java:137)
+	at org.apache.tomcat.util.net.NioEndpoint.unbind(NioEndpoint.java:312)
+	at org.apache.tomcat.util.net.AbstractEndpoint.destroy(AbstractEndpoint.java:1009)
+	at org.apache.coyote.AbstractProtocol.destroy(AbstractProtocol.java:608)
+	at org.apache.catalina.connector.Connector.destroyInternal(Connector.java:999)
+	... 13 more
+
+08-Oct-2018 17:17:19.473 信息 [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8019"]

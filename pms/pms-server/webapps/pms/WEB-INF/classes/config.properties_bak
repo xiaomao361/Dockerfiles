@@ -1,0 +1,17 @@
+#CAS  authentication address
+cas.server.url=http://120.133.0.89:8080/cas
+cas.service.url=http://120.133.0.89:8090/pms
+
+#Base Path
+web.basepath=http://120.133.0.89:8090/pms
+#Inc File Path
+inc.basepath=http://120.133.0.89:8090/pms
+
+#ZooKeeper
+dubbo.registry.address=zookeeper://172.16.10.152:2181?backup=172.16.10.158:2181,172.16.10.162:2181
+
+#db
+db.datasource.url=jdbc:mysql://172.16.10.164:3306/db_pms?useUnicode=true&amp;characterEncoding=utf8&amp;autoReconnect=true
+db.datasource.username=dbmaster
+db.datasource.password=f0922186e3
+db.datasource.driver=com.mysql.jdbc.Driver

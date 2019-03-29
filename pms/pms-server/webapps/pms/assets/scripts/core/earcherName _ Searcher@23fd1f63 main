@@ -1,0 +1,10 @@
+earcherName : Searcher@23fd1f63 main 
+caching : true 
+numDocs : 5396 
+maxDoc : 5396 
+reader : SolrIndexReader{this=7b19c9e9,r=ReadOnlyDirectoryReader@7b19c9e9,refCnt=1,segments=1} 
+readerDir : org.apache.lucene.store.MMapDirectory@/usr/local/yougou/apache-solr-3.6.2/example/multicore/goods/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@36a701fc 
+indexVersion : 1373515567280 
+openedAt : Wed Jul 30 21:49:06 CST 2014 
+registeredAt : Wed Jul 30 21:49:14 CST 2014 
+warmupTime : 7905 

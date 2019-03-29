@@ -1,6 +1,6 @@
 # ruby images base on centos7 
 #
-# incloud: ruby 2.2.5 rails 4.2.5
+# incloud: ruby rails
 #
 # version:                 2.0
 
@@ -45,7 +45,7 @@ RUN gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A170311380
     && /bin/bash -l -c "source /etc/profile.d/rvm.sh"
 
 # install ruby and rails
-RUN /bin/bash -l -c "rvm install 2.5.1" \
+RUN /bin/bash -l -c "rvm install 2.3.1" \
     && /bin/bash -l -c "gem sources -a http://gems.ruby-china.org/ --remove https://rubygems.org/" \
-    && /bin/bash -l -c "gem install rails -v '5.2.0'" \
+    && /bin/bash -l -c "gem install rails -v '5.0.0'" \
     && /bin/bash -l -c "gem install puma"
