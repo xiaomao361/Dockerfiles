@@ -1,0 +1,15 @@
+---
+- hosts: ai
+  remote_user: gold
+  vars:
+    version: '{{version}}'
+    app: '{{app}}'
+  tasks:
+      - name: make {{app}} docker-compose.yml file
+        command: "/home/gold/ai/{{app}}/make_yml.sh {{version}}"
+
+      - name: restart the project
+        become: yes
+        become_user: root
+        become_method: sudo
+        command: "/home/gold/ai/{{app}}/restart_app.sh"
