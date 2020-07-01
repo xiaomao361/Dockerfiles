@@ -32,7 +32,7 @@
 
 		<groovy-all.version>2.4.5</groovy-all.version>
 		<mail.version>1.4.6</mail.version>
-		<quartz.version>2.3.0</quartz.version>
+		<quartz.version>2.3.2</quartz.version>
 	</properties>
 
 	<dependencies>
