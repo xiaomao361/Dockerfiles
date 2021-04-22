@@ -28,7 +28,7 @@
 		<c3p0.version>0.9.5.2</c3p0.version>
 		<mysql-connector-java.version>5.1.29</mysql-connector-java.version>
 		<mybatis-spring.version>1.2.2</mybatis-spring.version>
-		<mybatis.version>3.2.8</mybatis.version>
+		<mybatis.version>3.5.6</mybatis.version>
 
 		<groovy-all.version>2.4.5</groovy-all.version>
 		<mail.version>1.4.6</mail.version>
